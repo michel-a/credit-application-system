@@ -1,4 +1,4 @@
-package com.malves.creditapplicationsystem.dto
+package com.malves.creditapplicationsystem.dto.response
 
 import com.malves.creditapplicationsystem.entity.Customer
 import java.math.BigDecimal

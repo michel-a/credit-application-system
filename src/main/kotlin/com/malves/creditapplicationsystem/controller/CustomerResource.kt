@@ -1,8 +1,8 @@
 package com.malves.creditapplicationsystem.controller
 
-import com.malves.creditapplicationsystem.dto.CustomerDto
-import com.malves.creditapplicationsystem.dto.CustomerUpdateDto
-import com.malves.creditapplicationsystem.dto.CustomerViewDto
+import com.malves.creditapplicationsystem.dto.request.CustomerDto
+import com.malves.creditapplicationsystem.dto.request.CustomerUpdateDto
+import com.malves.creditapplicationsystem.dto.response.CustomerViewDto
 import com.malves.creditapplicationsystem.entity.Customer
 import com.malves.creditapplicationsystem.service.impl.CustomerService
 import jakarta.validation.Valid
@@ -38,7 +38,8 @@ class CustomerResource(
 
     @PatchMapping
     fun updateCustomer(@RequestParam(value = "customerId") id: Long,
-                       @RequestBody @Valid customerUpdateDto: CustomerUpdateDto): ResponseEntity<CustomerViewDto> {
+                       @RequestBody @Valid customerUpdateDto: CustomerUpdateDto
+    ): ResponseEntity<CustomerViewDto> {
         val customer: Customer = this.customerService.findById(id)
         val customerToUpdate: Customer = customerUpdateDto.toEntity(customer)
         val customerUpdated: Customer = this.customerService.save(customerToUpdate)

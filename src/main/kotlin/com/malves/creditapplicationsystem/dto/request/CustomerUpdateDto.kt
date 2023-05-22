@@ -1,4 +1,4 @@
-package com.malves.creditapplicationsystem.dto
+package com.malves.creditapplicationsystem.dto.request
 
 import com.malves.creditapplicationsystem.entity.Customer
 import jakarta.validation.constraints.NotEmpty

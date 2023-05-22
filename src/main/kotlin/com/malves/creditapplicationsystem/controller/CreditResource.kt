@@ -1,8 +1,8 @@
 package com.malves.creditapplicationsystem.controller
 
-import com.malves.creditapplicationsystem.dto.CreditDto
-import com.malves.creditapplicationsystem.dto.CreditViewDto
-import com.malves.creditapplicationsystem.dto.CreditViewListDto
+import com.malves.creditapplicationsystem.dto.request.CreditDto
+import com.malves.creditapplicationsystem.dto.response.CreditViewDto
+import com.malves.creditapplicationsystem.dto.response.CreditViewListDto
 import com.malves.creditapplicationsystem.entity.Credit
 import com.malves.creditapplicationsystem.service.impl.CreditService
 import jakarta.validation.Valid
