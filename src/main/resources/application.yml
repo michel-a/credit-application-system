@@ -6,9 +6,10 @@ spring:
     username: michel
 #    password: 1234
   jpa:
-    hibernate:
-      properties:
-        hibernate.format_sql = true
+    show-sql: true
+#    hibernate:
+    properties:
+      hibernate.format_sql: true
 #      ddl-auto: create-drop
   h2:
     console:

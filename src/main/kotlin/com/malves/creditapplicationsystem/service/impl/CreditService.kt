@@ -3,9 +3,11 @@ package com.malves.creditapplicationsystem.service.impl
 import com.malves.creditapplicationsystem.entity.Credit
 import com.malves.creditapplicationsystem.repository.CreditRepository
 import com.malves.creditapplicationsystem.service.ICreditService
+import org.springframework.stereotype.Service
 import java.lang.RuntimeException
 import java.util.*
 
+@Service
 class CreditService(
     private val creditRepository: CreditRepository,
     private val customerService: CustomerService
