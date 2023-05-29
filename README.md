@@ -38,7 +38,7 @@ No terminal/console:
 
 1. Faça um clone do projeto na sua máquina: `git clone https://github.com/michel-a/credit-application-system.git`
 2. Entre na pasta raiz do projeto: `cd` 
-3. Execute o comando: `gradlew bootrun`
+3. Execute o comando: `gradle bootrun`
 
 
 Endereço para acessar a página do swaagger:
